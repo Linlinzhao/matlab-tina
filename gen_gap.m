@@ -30,7 +30,7 @@ for i = 1:num_bee
     idx_two = find(idx_nan == 1);
     idx_nan(idx_two) = 2;
     
-    gap{i} = idx_nan;
+    data{i} = idx_nan;
     
 
 end
@@ -38,4 +38,4 @@ end
 units.num = {'frame'};
 units.den = cell(1, 0);
 
-save('gap.mat', 'gap', 'units');
+save('gap.mat', 'data', 'units');
